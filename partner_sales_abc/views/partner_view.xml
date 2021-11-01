@@ -6,10 +6,10 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <page name="sales_purchases">
+            <!-- <page name="sales_purchases">
                 <group name="clasificacion_abc" string="Clasificacion ABC">
                     <field name="abc_sales_amount"/>
-                </group>
+                </group> -->
             </page>
         </field>
     </record>
