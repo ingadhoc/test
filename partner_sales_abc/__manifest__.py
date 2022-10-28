@@ -26,7 +26,7 @@
     'category': 'Tools',
     'depends': [
         'base',
-        'mail'
+        # 'mail'
     ],
     'data': [
         'views/partner_view.xml',
