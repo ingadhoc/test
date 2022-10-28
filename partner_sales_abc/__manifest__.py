@@ -25,7 +25,7 @@
     'license': 'AGPL-3',
     'category': 'Tools',
     'depends': [
-        'base',
+        # 'base',
         # 'mail'
     ],
     'data': [
