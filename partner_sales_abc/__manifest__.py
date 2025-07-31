@@ -36,3 +36,4 @@
     "auto_install": False,
     "application": False,
 }
+fsd
