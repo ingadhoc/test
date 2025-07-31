@@ -18,21 +18,22 @@
 #
 ##############################################################################
 {
-    'name': 'Partner Sales ABC',
-    'version': "13.0.1.0.0",
-    'website': 'www.adhoc.com.ar',
-    'author': 'ADHOC SA',
-    'license': 'AGPL-3',
-    'category': 'Tools',
-    'depends': [
+    "name": "Partner Sales ABC",
+    "version": "13.0.1.0.0",
+    "website": "www.adhoc.com.ar",
+    "author": "ADHOC SA",
+    "license": "AGPL-3",
+    "category": "Tools",
+    "depends": [
         # 'base',
         # 'mail'
     ],
-    'data': [
-        'views/partner_view.xml',
+    "data": [
+        "views/partner_view.xml",
     ],
-    'test': [],
-    'installable': False,
-    'auto_install': False,
-    'application': False,
+    "test": [],
+    "installable": False,
+    "auto_install": False,
+    "application": False,
 }
+fsd
