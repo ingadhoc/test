@@ -36,5 +36,10 @@
     "auto_install": False,
     "application": False,
 }
+<<<<<<< f6f33c2c89ca2c338ad99299b7cb991b2485951c
 fsd
 dsadsa
+||||||| 661ce10beb27305efb69ff17bc754764203078eb
+fsd
+=======
+>>>>>>> 18b300f83cd0a24783eb016a6fbf5768ed1127c3
