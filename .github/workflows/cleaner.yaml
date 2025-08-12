@@ -48,9 +48,16 @@ jobs:
             let repoName = context.repo.repo;
             let pullRequest;
 
-            if (context.eventName === 'workflow_dispatch') {
-              core.info(`Manual trigger for PR #${context.payload.inputs.pull_request_number}`);
-              let prNumber = context.payload.inputs.pull_request_number;
+            if (context.eventName === 'workflow_dispatch' || context.eventName === 'deployment_status') {
+              let prNumber = 0;
+              if (context.eventName === 'workflow_dispatch') {
+                prNumber = context.payload.inputs.pull_request_number;
+                core.info(`Manual trigger for PR #${prNumber}`);
+
+              if (context.eventName === 'deployment_status'){
+                prNumber = context.payload.deployment_status.description.split("#")[1].split(" ")[0];
+                core.info(`deployment_status trigger for PR #${prNumber}`);
+              }
 
               // Fetch the PR data using the number
               pullRequest = (await github.rest.pulls.get({
@@ -88,10 +95,7 @@ jobs:
 
             } else if (context.eventName === 'pull_request') {
               pullRequest = context.payload.pull_request;
-            } else if (context.eventName === 'deployment_status') {
-              const deployment = context.payload.deployment;
-              pullRequest = deployment.payload.pull_request;
-            }  else {
+            } else {
               core.setOutput('validation_passed', 'false');
               core.error(`Unsupported event type: ${context.eventName}`);
               return;
