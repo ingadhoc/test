@@ -8,6 +8,7 @@ on:
     types: [closed]
 
   deployment_status:
+  deployment:
 
   # Trigger manual
   workflow_dispatch:
