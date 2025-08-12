@@ -136,14 +136,15 @@ jobs:
                 console.error(`Error deleting branch '${baseBranchName}' from base repo: ${error.message}`);
               }
             }
-      - name: Delete branch from the fork repository
-        if: ${{ steps.pr_data_fetcher.outputs.validation_passed == 'true' && steps.pr_data_fetcher.outputs.is_fork == 'true' }}
+
+      - name: Delete branch from the fork repository (adhoc-dev)
+        if: ${{ steps.pr_data_fetcher.outputs.validation_passed == 'true' }}
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.EXTERNAL_REPO_TOKEN_CLEANER_ADHOC_DEV || github.token }}
           script: |
             const baseBranchName = `${{ steps.pr_data_fetcher.outputs.base_branch_name }}`;
-            const headRepoOwner = `${{ steps.pr_data_fetcher.outputs.head_repo_owner }}`;
+            const headRepoOwner = 'adhoc-dev';
             const headRepoName = `${{ steps.pr_data_fetcher.outputs.head_repo_name }}`;
 
             try {
