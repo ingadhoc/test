@@ -7,6 +7,8 @@ on:
   issues:
     types: [closed]
 
+  deployment_status:
+
   # Trigger manual
   workflow_dispatch:
     inputs:
@@ -22,7 +24,8 @@ jobs:
       github.repository_owner == 'ingadhoc' &&
       (
         (github.event_name == 'pull_request' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
-        (github.event_name == 'workflow_dispatch')
+        (github.event_name == 'workflow_dispatch') ||
+        (github.event_name == 'deployment_status' &&  github.event.deployment_status.state == 'success')
       )
     steps:
       - name: Delete branch from base and fork repos
@@ -37,7 +40,7 @@ jobs:
             // Debug info
             const eventName = context.eventName;
             core.info(`El nombre del evento es: ${eventName}`);
-            // core.info(JSON.stringify(context, null, 2))
+            core.info(JSON.stringify(context, null, 2))
             // End Debug info
 
             let repoOwner = context.repo.owner;
@@ -84,7 +87,10 @@ jobs:
 
             } else if (context.eventName === 'pull_request') {
               pullRequest = context.payload.pull_request;
-            } else {
+            } else if (context.eventName === 'deployment_status') {
+              const deployment = context.payload.deployment;
+              pullRequest = deployment.payload.pull_request;
+            }  else {
               core.setOutput('validation_passed', 'false');
               core.error(`Unsupported event type: ${context.eventName}`);
               return;
