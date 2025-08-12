@@ -53,8 +53,9 @@ jobs:
               if (context.eventName === 'workflow_dispatch') {
                 prNumber = context.payload.inputs.pull_request_number;
                 core.info(`Manual trigger for PR #${prNumber}`);
+              }
 
-              if (context.eventName === 'deployment_status'){
+              if (context.eventName === 'deployment_status') {
                 prNumber = context.payload.deployment_status.description.split("#")[1].split(" ")[0];
                 core.info(`deployment_status trigger for PR #${prNumber}`);
               }
