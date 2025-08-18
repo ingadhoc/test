@@ -8,7 +8,7 @@ on:
   #   types: [closed]
 
   deployment_status:
-  deployment:
+  # deployment:
 
   # Trigger manual
   workflow_dispatch:
@@ -33,7 +33,6 @@ jobs:
         uses: actions/github-script@v6
         id: pr_data_fetcher
         with:
-          # github-token: ${{ github.token }}
           script: |
             // Get PR information
             core.info('Fetching PR data and validating conditions...');
