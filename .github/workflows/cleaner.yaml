@@ -1,7 +1,14 @@
 name: Delete PR branch from fork and base repo
 
 on:
+  # pull_request:
+  #   types: [closed]
+
+  # issues:
+  #   types: [closed]
+
   deployment_status:
+  # deployment:
 
   # Trigger manual
   workflow_dispatch:
