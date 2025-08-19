@@ -45,13 +45,14 @@ on:
 jobs:
   delete-branch:
     runs-on: ubuntu-latest
-    # if: >
-    #   github.repository_owner == 'ingadhoc' &&
-    #   (
-    #     (github.event_name == 'pull_request' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
-    #     (github.event_name == 'workflow_dispatch') ||
-    #     (github.event_name == 'deployment_status' &&  github.event.deployment_status.state == 'success')
-    #   )
+    if: >
+      github.repository_owner == 'ingadhoc' &&
+      (
+        (github.event_name == 'pull_request' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
+        (github.event_name == 'pull_request_target' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
+        (github.event_name == 'workflow_dispatch') ||
+        (github.event_name == 'deployment_status' &&  github.event.deployment_status.state == 'success')
+      )
     steps:
       - name: Delete branch from base and fork repos
         uses: actions/github-script@v6
