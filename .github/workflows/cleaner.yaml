@@ -10,6 +10,9 @@ on:
   deployment_status:
   deployment:
 
+  pull_request_target:
+  
+
   # Trigger manual
   workflow_dispatch:
     inputs:
