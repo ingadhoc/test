@@ -3,34 +3,36 @@ name: Delete PR branch from fork and base repo
 on:
   pull_request:
     types: [closed]
-
-  issues:
+  pull_request_target:
     types: [closed]
 
-  deployment_status:
-  deployment:
+  # issues:
+  #   types: [closed]
 
-  pull_request_target:
-    types:
-      - assigned
-      - unassigned
-      - labeled
-      - unlabeled
-      - opened
-      - edited
-      - closed
-      - reopened
-      - synchronize
-      - converted_to_draft
-      - ready_for_review
-      - locked
-      - unlocked
-      - enqueued
-      - dequeued
-      - review_requested
-      - review_request_removed
-      - auto_merge_enabled
-      - auto_merge_disabled
+  # deployment_status:
+  # deployment:
+
+  # pull_request_target:
+  #   types:
+  #     - assigned
+  #     - unassigned
+  #     - labeled
+  #     - unlabeled
+  #     - opened
+  #     - edited
+  #     - closed
+  #     - reopened
+  #     - synchronize
+  #     - converted_to_draft
+  #     - ready_for_review
+  #     - locked
+  #     - unlocked
+  #     - enqueued
+  #     - dequeued
+  #     - review_requested
+  #     - review_request_removed
+  #     - auto_merge_enabled
+  #     - auto_merge_disabled
 
   # Trigger manual
   workflow_dispatch:
