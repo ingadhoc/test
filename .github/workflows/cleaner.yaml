@@ -118,7 +118,7 @@ jobs:
                 return;
               }
 
-            } else if (context.eventName in ['pull_request', 'pull_request_target']) {
+            } else if (['pull_request', 'pull_request_target'].includes(context.eventName)) {
               pullRequest = context.payload.pull_request;
             } else {
               core.setOutput('validation_passed', 'false');
