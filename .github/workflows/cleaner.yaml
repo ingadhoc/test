@@ -1,14 +1,14 @@
 name: Delete PR branch from fork and base repo
 
 on:
-  # pull_request:
-  #   types: [closed]
+  pull_request:
+    types: [closed]
 
-  # issues:
-  #   types: [closed]
+  issues:
+    types: [closed]
 
   deployment_status:
-  # deployment:
+  deployment:
 
   # Trigger manual
   workflow_dispatch:
@@ -21,13 +21,13 @@ on:
 jobs:
   delete-branch:
     runs-on: ubuntu-latest
-    if: >
-      github.repository_owner == 'ingadhoc' &&
-      (
-        (github.event_name == 'pull_request' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
-        (github.event_name == 'workflow_dispatch') ||
-        (github.event_name == 'deployment_status' &&  github.event.deployment_status.state == 'success')
-      )
+    # if: >
+    #   github.repository_owner == 'ingadhoc' &&
+    #   (
+    #     (github.event_name == 'pull_request' && github.event.pull_request.merged == false && github.event.sender.login == 'roboadhoc') ||
+    #     (github.event_name == 'workflow_dispatch') ||
+    #     (github.event_name == 'deployment_status' &&  github.event.deployment_status.state == 'success')
+    #   )
     steps:
       - name: Delete branch from base and fork repos
         uses: actions/github-script@v6
