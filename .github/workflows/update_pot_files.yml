@@ -6,7 +6,7 @@ name: Update .pot files
 
 on:
   push:
-    branches: "*.0-*"
+    branches: "*.0"
 
 jobs:
   update-pot:
