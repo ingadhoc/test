@@ -27,6 +27,8 @@ jobs:
           persist-credentials: false
       - name: Install addons and dependencies
         run: oca_install_addons
+      - name: Initialize test db
+        run: oca_init_test_database
       - name: Update .pot files
         run: |
           oca_export_and_push_pot \
