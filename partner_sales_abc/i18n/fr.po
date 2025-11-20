@@ -10,14 +10,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-02 10:33+0000\n"
-"PO-Revision-Date: 2020-01-30 16:35+0000\n"
-"Last-Translator: Franck AGBEAGBE <edfranco1021@gmail.com>, 2020\n"
-"Language-Team: French (https://www.transifex.com/adhoc/teams/46451/fr/)\n"
+"PO-Revision-Date: 2025-11-20 16:36+0000\n"
+"Last-Translator: AdhocAdmin <weblate@adhoc.inc>\n"
+"Language-Team: French <https://translation.dev-adhoc.com/projects/"
+"0-adhoc-project-template/0-adhoc-project-template-addon/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: partner_sales_abc
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_partner__abc_sales_amount
@@ -28,7 +30,7 @@ msgstr "Montant des ventes de ABC"
 #. module: partner_sales_abc
 #: model_terms:ir.ui.view,arch_db:partner_sales_abc.view_partner_user_form
 msgid "Clasificacion ABC"
-msgstr ""
+msgstr "Clasificacion FR"
 
 #. module: partner_sales_abc
 #: model:ir.model,name:partner_sales_abc.model_res_partner
