@@ -18,13 +18,19 @@ msgstr ""
 #. module: partner_sales_abc
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_partner__abc_sales_amount
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_users__abc_sales_amount
-msgid "ABC Sales amount 4"
+msgid "ABC Sales amount 5"
 msgstr ""
 
 #. module: partner_sales_abc
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_partner__abc_sales_amount_test
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_users__abc_sales_amount_test
 msgid "ABC Sales amount test"
+msgstr ""
+
+#. module: partner_sales_abc
+#: model:ir.model.fields,field_description:partner_sales_abc.field_res_partner__abc_sales_amount_test
+#: model:ir.model.fields,field_description:partner_sales_abc.field_res_users__abc_sales_amount_test
+msgid "ABC Sales amount test 2dsadsa"
 msgstr ""
 
 #. module: partner_sales_abc
