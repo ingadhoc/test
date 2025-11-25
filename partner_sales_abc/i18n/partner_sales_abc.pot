@@ -18,7 +18,7 @@ msgstr ""
 #. module: partner_sales_abc
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_partner__abc_sales_amount
 #: model:ir.model.fields,field_description:partner_sales_abc.field_res_users__abc_sales_amount
-msgid "ABC Sales amount"
+msgid "ABC Sales amount 2"
 msgstr ""
 
 #. module: partner_sales_abc
