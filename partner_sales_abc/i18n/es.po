@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-25 22:18+0000\n"
-"PO-Revision-Date: 2025-11-21 20:01+0000\n"
+"PO-Revision-Date: 2025-11-25 13:49+0000\n"
 "Last-Translator: AdhocAdmin <weblate@adhoc.inc>\n"
 "Language-Team: Spanish <https://translation.dev-adhoc.com/projects/"
 "0-adhoc-project-template/0-adhoc-project-template-addon/es/>\n"
@@ -31,7 +31,7 @@ msgstr "ABC Ventas por Monto"
 #. module: partner_sales_abc
 #: model_terms:ir.ui.view,arch_db:partner_sales_abc.view_partner_user_form
 msgid "Clasificacion ABC"
-msgstr "Clasificacion ABC test 2"
+msgstr "Clasificacion ABC test 3"
 
 #. module: partner_sales_abc
 #: model:ir.model,name:partner_sales_abc.model_res_partner
