@@ -9,3 +9,4 @@ from odoo import fields, models
 class partner(models.Model):
     _inherit = "res.partner"
     abc_sales_amount = fields.Char("ABC Sales amount 7")
+    test_field = fields.Char()
