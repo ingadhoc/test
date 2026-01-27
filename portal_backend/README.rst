@@ -18,7 +18,7 @@ This module creates a new user type "Portal Backend" that grants access to the O
 
 To create the necessary groups and categories for "portal_app", you can use the following template:
 
-App category inheriting from portal advanced:
+App category inheriting from portal advanced: Test
 
 .. code-block:: xml
 
