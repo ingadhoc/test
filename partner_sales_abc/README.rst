@@ -6,7 +6,7 @@
 Partner Sales ABC
 =================
 
-Add field abc_sales_amount in res.partner. Test
+Add field abc_sales_amount in res.partner.
 
 Installation
 ============
