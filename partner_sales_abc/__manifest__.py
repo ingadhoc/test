@@ -19,7 +19,7 @@
 ##############################################################################
 {
     "name": "Partner Sales ABC",
-    "version": "13.0.1.8.0",
+    "version": "13.0.1.9.0",
     "website": "www.adhoc.com.ar",
     "author": "ADHOC SA",
     "license": "AGPL-3",
