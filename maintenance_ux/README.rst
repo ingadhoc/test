@@ -14,7 +14,7 @@
 Maintenance UX
 ==============
 
-* Add posibility to rate maintenance requests. Test
+* Add posibility to rate maintenance requests. Test 2
 
 Installation
 ============
