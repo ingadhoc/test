@@ -50,7 +50,7 @@ applyTo:
 
 ## Nombres y estilo
 
-- Métodos privados prefijo `_`; en Odoo 19, preferir `@api.private` donde aplica.
+- Métodos privados prefijo `_`. En este repo NO usamos `@api.private` (regla local, no tocar).
 - Métodos muy largos (>50 líneas) → sugerir split.
 - Comparaciones booleanas: `if x:` / `if not x:` (no `== True` / `== False`).
 - `else` después de `return` innecesario.
