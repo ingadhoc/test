@@ -9,5 +9,4 @@ class IrHttp(models.AbstractModel):
     def session_info(self):
         res = super().session_info()
         res["send_message_delay"] = self.env.user.send_message_delay
-        import pdb; pdb.set_trace()
         return res
