@@ -50,7 +50,7 @@ applyTo:
 
 ## Nombres y estilo
 
-- Métodos privados prefijo `_`. En este repo NO usamos `@api.private` (regla local, no tocar).
+- Métodos privados prefijo `_` (sigue siendo la convención estándar; ya bloquea RPC por sí solo). `@api.private` **no** es un reemplazo del prefijo: es para el caso de excepción de un método sin `_` (API pública existente, o método interno del ORM) que necesita bloquearse de RPC sin renombrarlo. Ver docstring de `private` en `odoo/orm/decorators.py`.
 - Métodos muy largos (>50 líneas) → sugerir split.
 - Comparaciones booleanas: `if x:` / `if not x:` (no `== True` / `== False`).
 - `else` después de `return` innecesario.
