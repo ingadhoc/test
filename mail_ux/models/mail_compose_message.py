@@ -14,6 +14,8 @@ class MailComposeMessage(models.TransientModel):
         if not self.env.user.send_message_delay:
             return mail_values_all
 
+        # datetime.now(): scheduled_date is stored in UTC and the delay is counted from now, not
+        # from the user timezone.
         scheduled_date = datetime.now() + timedelta(seconds=self.env.user.send_message_delay)
         for res_id, mail_values in mail_values_all.items():
             mail_values["scheduled_date"] = scheduled_date
