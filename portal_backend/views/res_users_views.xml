@@ -37,7 +37,7 @@
                  external user; this dedicated field (not a third group_ids node, which broke the
                  widget) is filtered to the Advanced Portal category and gated by access_type. -->
             <xpath expr="//page[@name='access_rights']" position="inside">
-                <group invisible="access_type != 'portal_backend'">
+                <group string="Advanced Portal Access" invisible="access_type != 'portal_backend'">
                     <field name="portal_advanced_group_ids" widget="portal_advanced_group_ids"
                            nolabel="1" colspan="2"/>
                 </group>
