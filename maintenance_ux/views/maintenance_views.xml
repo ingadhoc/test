@@ -13,7 +13,8 @@
                 </div>
             </xpath>
             <header position="inside">
-                <button string="Send Rating Request" name="action_send_rating" type="object" class="oe_highlight"/>
+                <button string="Request Rating" name="action_send_rating" type="object" class="oe_highlight"
+                        invisible="stage_id == False"/>
             </header>
         </field>
     </record>

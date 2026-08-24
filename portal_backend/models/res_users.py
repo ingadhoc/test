@@ -49,6 +49,7 @@ class ResUsers(models.Model):
 
     def _is_internal(self):
         self.ensure_one()
+        # sudo: the check runs for the very user being served, who cannot read its own groups yet.
         if self.sudo().has_group("portal_backend.group_portal_backend") and self.env.context.get("portal_bypass"):
             return True
         return super()._is_internal()

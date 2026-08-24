@@ -4,7 +4,10 @@ from odoo import fields, models
 class ResUsers(models.Model):
     _inherit = "res.users"
 
-    send_message_delay = fields.Integer()
+    send_message_delay = fields.Integer(
+        string="Send Message Delay",
+        help="Seconds the composer waits before sending a message, so the author can still edit it.",
+    )
 
     @property
     def SELF_READABLE_FIELDS(self):

@@ -3,6 +3,8 @@
 
 # Test
 
+Sandbox repository. See `docs/bump_scenario.md` for the version bump fixture.
+
 
 
 ----
