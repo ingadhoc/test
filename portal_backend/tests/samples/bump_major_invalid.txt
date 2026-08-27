@@ -1,0 +1,4 @@
+Filler file for the mergebot version bump fixture: bump-major naming a module the PR does not touch.
+
+It only exists so the pull request touches this module. It is never loaded:
+nothing imports this directory and no manifest lists it.
