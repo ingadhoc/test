@@ -1,0 +1,4 @@
+Filler file for the mergebot version bump fixture: bump-major restricted to a module list.
+
+It only exists so the pull request touches this module. It is never loaded:
+nothing imports this directory and no manifest lists it.
