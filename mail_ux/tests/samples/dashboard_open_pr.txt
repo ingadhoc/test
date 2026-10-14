@@ -1,0 +1,3 @@
+Fixture for task 77519: an open PR, so the mergebot draws
+the checklist on the PR image (merge method, review, bump
+policy and CI statuses).
